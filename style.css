@@ -1,27 +1,62 @@
 li{
     display: inline;
 }
-section{
+section.Box1{
     background-color: #F2F2F2;
     display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    border: 1px dotted black;
-    float: left;
+    flex-direction: row;
+    align-items: flex-start;
+    
+    flex-wrap: wrap;
+    border: 1px dotted black; /* Mettre des bordures*/
+    float: left; /*Permet de faire flotter des éléments à droite*/
+    max-width: 70%;
+    
     
 }
 
-#hébergement{
-    display: flex;
-    justify-content: space-around;
-    align-items: flex-start;
-    flex-wrap: wrap;
-}
+
 
 nav{
     background-color: #F2F2F2;
     border: 1px dotted black;
     display: flex;
-    margin-left: 730px;
+    max-width: 30%;
+    justify-content: flex-start;
+}
+div.hébergement
+{
+    
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: row;
+    min-width: 70%;
+    max-height: 600px;
+}
+img.héber{
+    min-width: 500px;
+    min-height: 400px;
+    
+}
+
+
+
+.floater1
+{
+    order: 1;
+    align-self: center;
+}
+
+figcaption{
+    font-weight: bold;
+}
+
+img{
+    max-width: 25%;
+}
+section.activité1{
+    display: inline-flex;
+    flex-direction: column;
     justify-content: flex-end;
 }
