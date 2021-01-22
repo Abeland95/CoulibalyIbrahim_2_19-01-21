@@ -1,5 +1,6 @@
 li{
     display: inline;
+    
 }
 section.Box1{
     background-color: #F2F2F2;
@@ -8,21 +9,26 @@ section.Box1{
     align-items: flex-start;
     
     flex-wrap: wrap;
-    border: 1px dotted black; /* Mettre des bordures*/
+    border: 1px black; /* Mettre des bordures*/
+    border-radius: 10px 10px 10px 10px;
     float: left; /*Permet de faire flotter des éléments à droite*/
-    max-width: 70%;
-    
-    
+    width: 65%;
+    margin-right: 40px; /*Marge extérieur avec la droite (décalage à gauche)*/
+    margin-left: 20px;
+    padding-left: 20px; /*Marge intérieure*/
 }
 
 
 
 nav{
     background-color: #F2F2F2;
-    border: 1px dotted black;
+    border-radius: 10px 10px 10px 10px;
     display: flex;
+    
+    flex-direction: row;
     max-width: 30%;
-    justify-content: flex-start;
+    margin-right: 20px;
+    padding-left: 20px; /*Marge intérieure*/
 }
 
 div.hébergement{
@@ -51,8 +57,12 @@ div.héber{
 
 figcaption{
     font-weight: bold;
+    
 }
-
+a{
+    text-decoration: none; /*ENlever soulignage des liens*/
+    color: black;
+}
 img{
     max-width: 25%;
 }
@@ -62,10 +72,16 @@ section.activité1{
     justify-content: flex-end;
 }
 
+
+
 footer{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    background-color: #F2F2F2;
+    border-radius: 10px 10px 10px 10px;
+    padding-right: 250px;
+    padding-left: 10px;
 
 }
 
