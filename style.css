@@ -1,7 +1,22 @@
+@font-face
+{
+    font-family: 'Raleway';
+    src: url('Raleway-VariableFont_wght.ttf');
+    src: url('Raleway-VariableFont_wght.ttf') format('embedded-opentype'),
+         url('static/Raleway-Bold.ttf') format('ttf'),
+         url('static/Raleway-Medium.ttf') format('truetype'),
+         url('static/Raleway-Regular.ttf') format('ttf');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
 li{
     display: inline;
+    font-family: Raleway, Arial, Helvetica, sans-serif
     
 }
+
 section.Box1{
     background-color: #F2F2F2;
     display: flex;
@@ -57,6 +72,7 @@ div.héber{
 
 figcaption{
     font-weight: bold;
+    font-family: Raleway, Arial, Helvetica, sans-serif;
     
 }
 a{
@@ -82,10 +98,16 @@ footer{
     border-radius: 10px 10px 10px 10px;
     padding-right: 250px;
     padding-left: 10px;
+   
 
 }
 
 div.élément_liste{
     display: flex;
     flex-direction: column;
+    justify-content: flex-start;
+}
+
+h2, footer, p{
+    font-family: Raleway, Arial, Helvetica, sans-serif
 }
