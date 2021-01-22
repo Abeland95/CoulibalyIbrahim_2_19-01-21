@@ -24,20 +24,21 @@ nav{
     max-width: 30%;
     justify-content: flex-start;
 }
-div.hébergement
-{
-    
+
+div.hébergement{
     display: flex;
-    justify-content: space-around;
-    align-items: center;
     flex-direction: row;
-    min-width: 70%;
-    max-height: 600px;
-}
-img.héber{
-    min-width: 500px;
-    min-height: 400px;
     
+    
+    max-width: 800px;
+}
+
+div.héber{
+    display: flex;
+    
+    max-width: 500px;
+    max-height: 400px;
+    flex-wrap: wrap;
 }
 
 
@@ -59,4 +60,16 @@ section.activité1{
     display: inline-flex;
     flex-direction: column;
     justify-content: flex-end;
+}
+
+footer{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+}
+
+div.élément_liste{
+    display: flex;
+    flex-direction: column;
 }
