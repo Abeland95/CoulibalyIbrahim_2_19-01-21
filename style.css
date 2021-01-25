@@ -19,7 +19,7 @@ li{
 
 section.Box1{
     background-color: #F2F2F2;
-    display: flex;
+    display: block;
     flex-direction: row;
     align-items: flex-start;
     
