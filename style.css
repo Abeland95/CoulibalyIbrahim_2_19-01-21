@@ -20,9 +20,8 @@ section.Box1{
     display: flex;
     flex-direction: row;
     align-items: flex-start;
-    
     padding-left: 20px;
-    height: 800px;
+    height: 660px; /*Taille bloac invisible Box1*/
     
     max-width: 100%;
 }
@@ -33,31 +32,42 @@ nav{
     border-radius: 10px 10px 10px 10px;
     display: flex;
     flex-direction: flex-start;
+
     width: 35%;
     margin-right: 20px;
-    padding-left: 20px; /*Marge intérieure*/
+    padding-left: 40px; /*Marge intérieure*/
     margin-left: 20px; /*MArge extérieure gauche*/
-    height: 600px;
+    height: 620px;
     
 }
+
 
 .titre_héber{
     grid-column: 1/-1;
 }
-div.hébergement{
+div.hébergement_main{
     display: flex;
     background-color: #F2F2F2;
     border-radius: 10px 10px 10px 10px;
-    flex-direction: row-reverse;
+    flex-direction: row;
     flex-wrap: wrap;
-    column-gap: 2rem;
-    row-gap: 2rem;
+    justify-content: flex-start;
     float: left;
     padding-left: 20px;
     padding-right: 20px;
-    
+    height: 620px;
+    width: 800px;
     
 }
+div.hébergement_box{ /*Box regroupant les hôtels (hébergement à Marseille)*/
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+
+
 article.héber{
     background-color: white;
     
@@ -68,7 +78,10 @@ article.héber{
     cursor: pointer;
     box-sizing: border-box;
     height: 170px; /*hauteur du bloc blanc image*/
+    
+    
 }
+
  figure{ /* Représente le block avec les hotels*/
     display: block;
     margin-block-start: 0px; /*Marge vers le haut*/
@@ -95,6 +108,7 @@ p{
     margin-block-end: 1em;
     margin-inline-start: 0px;
     margin-inline-end: 0px;
+    margin-left: 8px;
 }
 .héber_image{ /*Représente l'image*/
     height: 85px; /*Longueur  du block hébergement*/
@@ -105,17 +119,55 @@ p{
     border-radius: 1rem 1rem 0 0;
 
 }
+.float_image{
+    height: 385px; /*Longueur  du block hébergement*/
+    object-fit: cover; /*Contenu Image redimenssioné pour s'adapter au block*/
+    max-width: 200px;  /*Contrôle taille image dans la bordure*/
+    width: 200px; /*Largeur du block*/
+    max-height: 150px;
+    border-radius: 1rem 1rem 0 0;
+    
+}
 
 .populaire_image{
-    height: 120px; /*Longueur  du block hébergement*/
+    height: 138px; /*Longueur  du block hébergement*/
     object-fit: cover; /*Contenu Image redimenssioné pour s'adapter au block*/
     max-width: 200px;  /*Contrôle taille image dans la bordure*/
     width: 200px; /*Largeur du block*/
     max-height: 1500px;
     border-radius: 1rem 0 0 1rem;
+   
+    
 }
 
+article.popular{
+    background-color: white;
+    
+    padding: 0.375rem;
+    border-radius: 1.25rem;
+    box-shadow: 0 0 16px #0000002e;
+    transition-duration: 0.1s;
+    cursor: pointer;
+    box-sizing: border-box;
+    height: 150px; /*hauteur du bloc blanc image*/
+    width: 380px;
 
+    margin-block-start: 1em; /*Marge vers le haut*/
+    margin-block-end: 2.2em;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-between;  
+    align-items: center;  
+    
+}
+
+figcaption{
+    padding-left: 10px;
+}
+figcaption.test{
+    padding-right: 20px;
+}
 div.hébergement{
     
     display: flex;
@@ -131,10 +183,10 @@ div.floater1
     align-self: center;
     float: ;
 }
-section.Box2{
+div.activités1{
     display: flex;
     flex-direction: row;
-    align-items: ;
+    align-items: flex-end;
 }
 figcaption{
     font-weight: bold;
