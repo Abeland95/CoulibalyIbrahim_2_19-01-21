@@ -12,16 +12,19 @@
 
 li{
     display: inline;
-    font-family: Raleway, Arial, Helvetica, sans-serif
+    font-family: Raleway, Arial, Helvetica, sans-serif;
+    margin-right: 20px;
     
 }
+
+
 section.Box1{
     
     display: flex;
     flex-direction: row;
     align-items: flex-start;
     padding-left: 20px;
-    height: 660px; /*Taille bloac invisible Box1*/
+    height: 660px; /*Taille bloc invisible Box1 représentant le bloc hébergement et populaire*/
     
     max-width: 100%;
 }
@@ -77,7 +80,9 @@ article.héber{
     transition-duration: 0.1s;
     cursor: pointer;
     box-sizing: border-box;
-    height: 170px; /*hauteur du bloc blanc image*/
+    height: 180px; /*hauteur du bloc blanc image*/
+    margin-block-end: 3em;
+    
     
     
 }
@@ -177,17 +182,7 @@ div.hébergement{
 }
 
 
-div.floater1
-{
-    order: 1;
-    align-self: center;
-    float: ;
-}
-div.activités1{
-    display: flex;
-    flex-direction: row;
-    align-items: flex-end;
-}
+
 figcaption{
     font-weight: bold;
     font-family: Raleway, Arial, Helvetica, sans-serif;
@@ -200,31 +195,13 @@ a{
 img{
     max-width: 100%;
 }
-section.activité1{
-    display: inline-flex;
-    flex-direction: column;
-    justify-content: flex-end;
-}
 
 
 
-footer{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: flex-end;
-    background-color: #F2F2F2;
-    border-radius: 10px 10px 10px 10px;
-    padding-right: 250px;
-    padding-left: 10px;
 
-}
 
-div.élément_liste{
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-}
+
+
 
 h2, footer, p{
     font-family: Raleway, Arial, Helvetica, sans-serif
@@ -238,5 +215,196 @@ figure.floater{
     margin-inline-end: 0px;
     width: 300px;
     height: 500px;
+    float: left;
 }
 
+
+
+section.Box2{
+    
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding-left: 20px;
+    height: 550px; /*Taille bloc invisible Box1 représentant le bloc hébergement et populaire*/
+    
+    max-width: 100%;
+}
+
+div.img_activité{ /*Gère le bloc avec les deux images qui vont flotter*/
+    display: flex;
+    flex-direction: column-reverse;
+    
+}
+div.floater{ 
+    display: flex;
+    float: left;
+    
+}
+
+article.Activités{
+    background-color: white;
+    
+    margin-left: 30px;
+    border-radius: 1.25rem;
+    box-shadow: 0 0 16px #0000002e;
+    transition-duration: 0.1s;
+    cursor: pointer;
+    box-sizing: border-box;
+    height: 195px; /*hauteur du bloc blanc image*/
+    width: 300px;
+
+    margin-block-start: 1em; /*Marge vers le haut*/
+    margin-block-end: 15px;   /*Marge vers le bas*/
+}
+
+img.act_img{
+    height: 135px; /*Longueur  du block hébergement*/
+    object-fit: cover; /*Contenu Image redimenssioné pour s'adapter au block*/
+    max-width: 300px;  /*Contrôle taille image dans la bordure*/
+    width: 300px; /*Largeur du block*/
+    border-radius: 1rem 1rem 0 0;
+}
+
+img.float_img{
+    height: 360px; /*Longueur  de l'omage*/
+    object-fit: cover; /*Contenu Image redimenssioné pour s'adapter au block*/
+    max-width: 300px;  /*Contrôle taille image dans la bordure*/
+    width: 300px; /*Largeur du block*/
+    
+    border-radius: 1rem 1rem 0 0;
+}
+
+article.floater{
+    background-color: white;
+    border-radius: 1.25rem;
+    box-shadow: 0 0 16px #0000002e;
+    transition-duration: 0.1s;
+    cursor: pointer;
+    box-sizing: border-box;
+    height: 420px; /*hauteur du bloc blanc image*/
+    width: 300px;
+
+    margin-block-start: 1em; /*Marge vers le haut*/
+    margin-block-end: 30px;   /*Marge vers le bas*/
+}
+
+div.act_bloc_right{
+    margin-block-start: 68.8px; /*Marge vers le haut*/
+    margin-block-end: 30px;   /*Marge vers le bas*/
+    margin-left: 30px;
+}
+
+figcaption{
+    display: inline;
+   
+}
+div.étoiles{
+    display: flex;
+    flex-direction: row;
+    margin-left: 10px;
+    margin-block-end: 1em;
+    
+}
+div.étoile_bleu{
+    color: #0065FC;
+    font-size: 14px;
+}
+div.étoile_grise{
+    color: #DEEBFF;
+    font-size: 13.2px;
+}
+
+div.dispo_pop{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-block-start: 10px;
+}
+/*/////////////////////////////HEADER/////////////////////////////////*/
+/*Info Localisationt*/
+div.localisation{
+    display: flex;
+    flex-direction: row;
+    justify-content: ;
+}
+div.localisation_logo{
+    margin-top: 12px;
+}
+p.localisation{
+    margin-top: 0px;
+    padding-top: 0px;
+    margin-top: 12px;
+    font-weight: bold;
+    margin-left: 15px;
+}
+
+div.search{
+    background-color: #0065FC;
+    border-radius: 0 10px 10px 0 ;
+    width: 110px;
+    height: 40px;
+    margin-left: 25px;
+}
+p.search{
+    color: white;
+    text-align: center;
+    margin-top: 12px;
+}
+
+/*Info Logement*/
+    div.info_supp{
+        display: flex;
+        flex-direction: row;
+        margin-left: 24px;
+    
+        }
+    p.info{
+        margin-top: 0px;
+        margin-left: 10px;
+        padding-top: 5px;
+    }
+
+    div.info_logo{
+        color: #0065FC;
+        border: solid #DEEBFF;
+        border-radius: 12px;
+        border-width: 1px;
+        width: 25px;
+        height: 20px;
+        text-align: center;
+        font-size: 14px;
+        padding-top: 5px;
+        
+    }
+
+
+/*/////////////////////////////FOOTER/////////////////////////////////*/
+footer{
+    
+align-items: flex-end;
+    background-color: #F2F2F2;
+    border-radius: 10px 10px 10px 10px;
+    padding-right: 250px;
+
+    
+    padding-left: 10px;
+
+}
+
+div.dispo_footer{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+div.footer_li{
+    display: flex;
+    flex-direction: column;
+    line-height: 30px;
+    
+}
+
+h2.footer_title{
+    font-size: 18px;
+}
