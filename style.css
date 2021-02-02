@@ -18,6 +18,174 @@ li{
 }
 
 
+
+    
+
+
+header{
+    display: block;
+}
+
+
+
+article{
+    display: block;
+}
+p{
+    display: block;
+    margin-block-start: 1em; /*Marge vers le haut*/
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    margin-left: 8px;
+}
+
+
+    
+
+figcaption.test{
+    padding-right: 20px;
+}
+
+
+figcaption{
+    font-weight: bold;
+    font-family: Raleway, Arial, Helvetica, sans-serif;
+    
+}
+a{
+    text-decoration: none; /*Enlever soulignage des liens*/
+    color: black;
+}
+img{
+    max-width: 100%;
+}
+
+
+
+h2, footer, p{
+    font-family: Raleway, Arial, Helvetica, sans-serif
+}
+
+
+
+div.act_bloc_right{
+    margin-block-start: 68.8px; /*Marge vers le haut*/
+    margin-block-end: 30px;   /*Marge vers le bas*/
+    margin-left: 30px;
+}
+
+figcaption{
+    display: inline;
+   
+}
+div.étoiles{
+    display: flex;
+    flex-direction: row;
+    margin-left: 10px;
+    margin-block-end: 1em;
+    
+}
+div.étoile_bleu{
+    color: #0065FC;
+    font-size: 14px;
+}
+div.étoile_grise{
+    color: #DEEBFF;
+    font-size: 13.2px;
+}
+
+
+/*/////////////////////////////HEADER/////////////////////////////////*/
+
+/*/////////////////Description Site*/
+div.sitecaption{
+    line-height: 15px;
+    margin-top: 40px;
+}
+
+/*/////////////////Info Localisation*/
+div.localisation{
+    display: flex;
+    flex-direction: row;
+    margin-left: 30px;
+    
+}
+div.localisation_mar{
+    border: 1px solid #F2F2F2;
+    height: 40px;
+    width: 180px;
+    
+}
+div.localisation_logo{
+    
+    border-radius: 10px 0 0 10px;
+    background-color: #F2F2F2;
+    height: 42px;
+    width: 40px;
+    text-align: center;
+    border-width: 1px;
+    
+}
+div.logo_hd{
+    
+    margin-top: 12px;
+}
+p.localisation{
+    margin-top: 0px;
+    padding-top: 0px;
+    margin-top: 12px;
+    font-weight: bold;
+    margin-left: 15px;
+}
+
+div.search{
+    background-color: #0065FC;
+    border-radius: 0 10px 10px 0 ;
+    width: 110px;
+    height: 40px;
+    border-width: 1px;
+    
+    
+}
+p.search{
+    color: white;
+    text-align: center;
+    margin-top: 12px;
+    margin-right: 10px;
+}
+
+/*////////////////Info Logement*/
+    div.info_supp{
+        display: flex;
+        flex-direction: row;
+        margin-left: 24px;
+    
+        }
+    p.info{
+        margin-top: 0px;
+        margin-left: 10px;
+        padding-top: 5px;
+    }
+
+    div.info_logo{
+        color: #0065FC;
+        border: solid #F2F2F2;
+        border-radius: 12px;
+        border-width: 1px;
+        width: 25px;
+        height: 20px;
+        text-align: center;
+        font-size: 14px;
+        padding-top: 5px;
+        
+    }
+
+ 
+
+/*///////////////////////////SECTION BOX 1/////////////////////////////*/
+
+/*///////////////Bloc Activité*/
 section.Box1{
     
     display: flex;
@@ -28,22 +196,6 @@ section.Box1{
     
     max-width: 100%;
 }
-
-/*Représente le bloc populaire*/
-nav{
-    background-color: #F2F2F2;
-    border-radius: 10px 10px 10px 10px;
-    display: flex;
-    flex-direction: flex-start;
-
-    width: 35%;
-    margin-right: 20px;
-    padding-left: 40px; /*Marge intérieure*/
-    margin-left: 20px; /*MArge extérieure gauche*/
-    height: 620px;
-    
-}
-
 
 .titre_héber{
     grid-column: 1/-1;
@@ -95,26 +247,8 @@ article.héber{
     margin-inline-end: 0px;
     width: 200px;
     max-height: 100px;
-    
 }
 
-header{
-    display: block;
-}
-
-
-
-article{
-    display: block;
-}
-p{
-    display: block;
-    margin-block-start: 1em; /*Marge vers le haut*/
-    margin-block-end: 1em;
-    margin-inline-start: 0px;
-    margin-inline-end: 0px;
-    margin-left: 8px;
-}
 .héber_image{ /*Représente l'image*/
     height: 85px; /*Longueur  du block hébergement*/
     object-fit: cover; /*Contenu Image redimenssioné pour s'adapter au block*/
@@ -124,27 +258,20 @@ p{
     border-radius: 1rem 1rem 0 0;
 
 }
-.float_image{
-    height: 385px; /*Longueur  du block hébergement*/
-    object-fit: cover; /*Contenu Image redimenssioné pour s'adapter au block*/
-    max-width: 200px;  /*Contrôle taille image dans la bordure*/
-    width: 200px; /*Largeur du block*/
-    max-height: 150px;
-    border-radius: 1rem 1rem 0 0;
-    
-}
+/*//////////////////////////////Représente le bloc populaire*/
+nav{
+    background-color: #F2F2F2;
+    border-radius: 10px 10px 10px 10px;
+    display: flex;
+    flex-direction: flex-start;
 
-.populaire_image{
-    height: 138px; /*Longueur  du block hébergement*/
-    object-fit: cover; /*Contenu Image redimenssioné pour s'adapter au block*/
-    max-width: 200px;  /*Contrôle taille image dans la bordure*/
-    width: 200px; /*Largeur du block*/
-    max-height: 1500px;
-    border-radius: 1rem 0 0 1rem;
-   
+    width: 35%;
+    margin-right: 20px;
+    padding-left: 40px; /*Marge intérieure*/
+    margin-left: 20px; /*MArge extérieure gauche*/
+    height: 620px;
     
-}
-
+}  
 article.popular{
     background-color: white;
     
@@ -166,60 +293,27 @@ article.popular{
     align-items: center;  
     
 }
-
-figcaption{
-    padding-left: 10px;
-}
-figcaption.test{
-    padding-right: 20px;
-}
-div.hébergement{
+.populaire_image{
+    height: 138px; /*Longueur  du block hébergement*/
+    object-fit: cover; /*Contenu Image redimenssioné pour s'adapter au block*/
+    max-width: 200px;  /*Contrôle taille image dans la bordure*/
+    width: 200px; /*Largeur du block*/
+    max-height: 1500px;
+    border-radius: 1rem 0 0 1rem;
+   
     
+}
+
+div.dispo_pop{
     display: flex;
-    flex-direction: row;
-    max-width: 58%;
-    
+    flex-direction: column;
+    justify-content: center;
+    margin-block-start: 10px;
 }
 
+/*///////////////////////SECTION BOX 2/////////////////////////////////*/
 
-
-figcaption{
-    font-weight: bold;
-    font-family: Raleway, Arial, Helvetica, sans-serif;
-    
-}
-a{
-    text-decoration: none; /*ENlever soulignage des liens*/
-    color: black;
-}
-img{
-    max-width: 100%;
-}
-
-
-
-
-
-
-
-
-h2, footer, p{
-    font-family: Raleway, Arial, Helvetica, sans-serif
-}
-
-figure.floater{
-    display: block;
-    margin-block-start: 0px; /*Marge vers le haut*/
-    margin-block-end: 0em;
-    margin-inline-start: 0px; /*Marge intérieur block image*/
-    margin-inline-end: 0px;
-    width: 300px;
-    height: 500px;
-    float: left;
-}
-
-
-
+/*///////////Bloc général*/
 section.Box2{
     
     display: flex;
@@ -230,18 +324,42 @@ section.Box2{
     
     max-width: 100%;
 }
-
 div.img_activité{ /*Gère le bloc avec les deux images qui vont flotter*/
     display: flex;
     flex-direction: column-reverse;
     
 }
+/*////////////Floater*/
+
+article.floater{
+    background-color: white;
+    border-radius: 1.25rem;
+    box-shadow: 0 0 16px #0000002e;
+    transition-duration: 0.1s;
+    cursor: pointer;
+    box-sizing: border-box;
+    height: 420px; /*hauteur du bloc blanc image*/
+    width: 300px;
+
+    margin-block-start: 1em; /*Marge vers le haut*/
+    margin-block-end: 30px;   /*Marge vers le bas*/
+}
+
 div.floater{ 
     display: flex;
     float: left;
-    
-}
+}  
 
+img.float_img{
+    height: 360px; /*Longueur  de l'omage*/
+    object-fit: cover; /*Contenu Image redimenssioné pour s'adapter au block*/
+    max-width: 300px;  /*Contrôle taille image dans la bordure*/
+    width: 300px; /*Largeur du block*/
+    
+    border-radius: 1rem 1rem 0 0;
+}  
+
+/*////////////Bloc d'img en colonnes*/
 article.Activités{
     background-color: white;
     
@@ -265,120 +383,6 @@ img.act_img{
     width: 300px; /*Largeur du block*/
     border-radius: 1rem 1rem 0 0;
 }
-
-img.float_img{
-    height: 360px; /*Longueur  de l'omage*/
-    object-fit: cover; /*Contenu Image redimenssioné pour s'adapter au block*/
-    max-width: 300px;  /*Contrôle taille image dans la bordure*/
-    width: 300px; /*Largeur du block*/
-    
-    border-radius: 1rem 1rem 0 0;
-}
-
-article.floater{
-    background-color: white;
-    border-radius: 1.25rem;
-    box-shadow: 0 0 16px #0000002e;
-    transition-duration: 0.1s;
-    cursor: pointer;
-    box-sizing: border-box;
-    height: 420px; /*hauteur du bloc blanc image*/
-    width: 300px;
-
-    margin-block-start: 1em; /*Marge vers le haut*/
-    margin-block-end: 30px;   /*Marge vers le bas*/
-}
-
-div.act_bloc_right{
-    margin-block-start: 68.8px; /*Marge vers le haut*/
-    margin-block-end: 30px;   /*Marge vers le bas*/
-    margin-left: 30px;
-}
-
-figcaption{
-    display: inline;
-   
-}
-div.étoiles{
-    display: flex;
-    flex-direction: row;
-    margin-left: 10px;
-    margin-block-end: 1em;
-    
-}
-div.étoile_bleu{
-    color: #0065FC;
-    font-size: 14px;
-}
-div.étoile_grise{
-    color: #DEEBFF;
-    font-size: 13.2px;
-}
-
-div.dispo_pop{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    margin-block-start: 10px;
-}
-/*/////////////////////////////HEADER/////////////////////////////////*/
-/*Info Localisationt*/
-div.localisation{
-    display: flex;
-    flex-direction: row;
-    justify-content: ;
-}
-div.localisation_logo{
-    margin-top: 12px;
-}
-p.localisation{
-    margin-top: 0px;
-    padding-top: 0px;
-    margin-top: 12px;
-    font-weight: bold;
-    margin-left: 15px;
-}
-
-div.search{
-    background-color: #0065FC;
-    border-radius: 0 10px 10px 0 ;
-    width: 110px;
-    height: 40px;
-    margin-left: 25px;
-}
-p.search{
-    color: white;
-    text-align: center;
-    margin-top: 12px;
-}
-
-/*Info Logement*/
-    div.info_supp{
-        display: flex;
-        flex-direction: row;
-        margin-left: 24px;
-    
-        }
-    p.info{
-        margin-top: 0px;
-        margin-left: 10px;
-        padding-top: 5px;
-    }
-
-    div.info_logo{
-        color: #0065FC;
-        border: solid #DEEBFF;
-        border-radius: 12px;
-        border-width: 1px;
-        width: 25px;
-        height: 20px;
-        text-align: center;
-        font-size: 14px;
-        padding-top: 5px;
-        
-    }
-
-
 /*/////////////////////////////FOOTER/////////////////////////////////*/
 footer{
     
