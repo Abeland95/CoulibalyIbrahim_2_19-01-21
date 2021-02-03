@@ -44,13 +44,18 @@ p{
     
 
 figcaption.test{
-    padding-right: 20px;
+   margin-left: 10px;
+   display: inline;
+   font-size: 15px;
+   width: 800px;
+   
 }
 
 
 figcaption{
     font-weight: bold;
     font-family: Raleway, Arial, Helvetica, sans-serif;
+    margin-left: 10px;
     
 }
 a{
@@ -98,6 +103,63 @@ div.étoile_grise{
 
 /*/////////////////////////////HEADER/////////////////////////////////*/
 
+/*/////////////////Haut de page */
+body{
+    margin-top: 0px;
+}
+div.title{
+    margin-top: 10px;
+    margin-left: 10px;
+}
+div.haut_page{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+}
+div.lien{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-right: 30px;
+    width: 390px;  /*Permet de donner une largeur à la box et pourvoir créer un écart*/
+    
+}
+div.lien1{
+    font-family: Raleway, sans-serif;
+    color: #0065FC;
+    border-top: solid #0065FC;
+    border-width: 3px;
+    width: 160px;
+    text-align: center;
+    padding-top: 10px;
+}
+
+div.lien2{
+    font-family: Raleway, sans-serif;
+    padding-top: 10px;
+    width: 160px;
+    text-align: center;
+    border-top: solid white;
+}
+div.lien3{
+    font-family: Raleway, sans-serif;
+    font-weight: bold;
+    color: #0065FC;
+    border-top: solid white;
+    padding-top: 10px;
+}
+a.héber_link{
+    color: #0065FC;
+    
+}
+
+div.lien2:hover
+{
+    border-top: solid #0065FC;
+    border-width: 3px;
+    
+}
 /*/////////////////Description Site*/
 div.sitecaption{
     line-height: 15px;
@@ -382,6 +444,11 @@ img.act_img{
     max-width: 300px;  /*Contrôle taille image dans la bordure*/
     width: 300px; /*Largeur du block*/
     border-radius: 1rem 1rem 0 0;
+
+}
+div.dispo_act{
+    display: flex;
+    flex-direction: column-reverse;
 }
 /*/////////////////////////////FOOTER/////////////////////////////////*/
 footer{
