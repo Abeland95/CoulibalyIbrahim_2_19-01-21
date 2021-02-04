@@ -10,15 +10,6 @@
     font-style: normal;
 }
 
-li{
-    display: inline;
-    font-family: Raleway, Arial, Helvetica, sans-serif;
-    margin-right: 20px;
-    
-}
-
-
-
     
 
 
@@ -41,16 +32,6 @@ p{
 }
 
 
-    
-
-figcaption.test{
-   margin-left: 10px;
-   display: inline;
-   font-size: 15px;
-   width: 800px;
-   
-}
-
 
 figcaption{
     font-weight: bold;
@@ -71,7 +52,6 @@ img{
 h2, footer, p{
     font-family: Raleway, Arial, Helvetica, sans-serif
 }
-
 
 
 div.act_bloc_right{
@@ -233,7 +213,7 @@ p.search{
     div.info_logo{
         color: #0065FC;
         border: solid #F2F2F2;
-        border-radius: 12px;
+        border-radius: 12px; /*Permet ed faire un cercle (dépend de hauteur et largeur)*/
         border-width: 1px;
         width: 25px;
         height: 20px;
@@ -242,9 +222,70 @@ p.search{
         padding-top: 5px;
         
     }
+/* /////////////Filtres */
 
- 
+div.header_filtres{
+    font-weight: bold;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 70%;
+    margin-left: 20px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+div.filtre, div.filtre1, div.filtre2{ /*Bloc logo-text*/
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    border: solid #F2F2F2;
+    border-width: 2px;
+    border-radius: 25px;
+    height: 40px;
+    width: 170px;
+}
 
+div.filtre1{
+    width: 140px;
+}
+div.filtre2{
+    width: 230px;
+}
+div.logo_filtre{ /*Bloc logo*/
+    display: block;
+    color: #0065FC;
+    border-radius: 25px;
+    width: 45px;
+    height: 30px;
+    max-width: 45px;
+    max-height: 30px;
+    background-color: #D1F4FA;
+    text-align: center;
+    padding-top: 10px;
+}
+
+div.filtre_none{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    height: 45px;
+    width: 80px;
+
+}
+div.filtre:hover, div.filtre1:hover{ /*Bloc logo-text*/
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    border: solid #0065FC;
+    border-radius: 25px;
+    height: 40px;
+    width: 170px;
+    border-width: 3px;
+}
+div.filtre2:hover{
+    border: solid #0065FC;
+}
 /*///////////////////////////SECTION BOX 1/////////////////////////////*/
 
 /*///////////////Bloc Activité*/
@@ -391,6 +432,11 @@ div.img_activité{ /*Gère le bloc avec les deux images qui vont flotter*/
     flex-direction: column-reverse;
     
 }
+h3{
+    font-family: Raleway, sans-serif;
+    margin-left: 20px;
+    white-space: nowrap;
+}
 /*////////////Floater*/
 
 article.floater{
@@ -410,6 +456,7 @@ article.floater{
 div.floater{ 
     display: flex;
     float: left;
+    flex-direction: column;
 }  
 
 img.float_img{
@@ -419,6 +466,8 @@ img.float_img{
     width: 300px; /*Largeur du block*/
     
     border-radius: 1rem 1rem 0 0;
+    
+    
 }  
 
 /*////////////Bloc d'img en colonnes*/
@@ -479,3 +528,12 @@ div.footer_li{
 h2.footer_title{
     font-size: 18px;
 }
+
+li{
+    display: inline;
+    font-family: Raleway, Arial, Helvetica, sans-serif;
+    margin-right: 20px;
+    
+}
+/*////////////////////////////////////BROUILLON*/
+
