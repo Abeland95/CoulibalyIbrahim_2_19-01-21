@@ -436,6 +436,8 @@ h3{
     font-family: Raleway, sans-serif;
     margin-left: 20px;
     white-space: nowrap;
+    width: 400px;
+    
 }
 /*////////////Floater*/
 
@@ -535,5 +537,14 @@ li{
     margin-right: 20px;
     
 }
-/*////////////////////////////////////BROUILLON*/
+/*////////////////////////////////////DYNAMIQUE QUAND ON SURVOLE/////////////////////////*/
 
+
+
+article.héber:hover, article.popular:hover{
+    transform: scale(1.2, 1.2); /*transformation taille en 2D*/
+}
+
+article.Activités:hover, article.floater:hover{
+    transform: scale(1.1, 1.1);
+}
