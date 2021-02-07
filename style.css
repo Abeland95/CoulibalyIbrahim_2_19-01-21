@@ -58,6 +58,7 @@ div.act_bloc_right{
     margin-block-start: 68.8px; /*Marge vers le haut*/
     margin-block-end: 30px;   /*Marge vers le bas*/
     margin-left: 30px;
+    
 }
 
 figcaption{
@@ -86,6 +87,7 @@ div.étoile_grise{
 /*/////////////////Haut de page */
 body{
     margin-top: 0px;
+    width: auto;
 }
 div.title{
     margin-top: 10px;
@@ -377,8 +379,7 @@ nav{
     display: flex;
     flex-direction: flex-start;
 
-    width: 35%;
-    margin-right: 20px;
+    width: 30%;
     padding-left: 40px; /*Marge intérieure*/
     margin-left: 20px; /*MArge extérieure gauche*/
     height: 620px;
@@ -431,9 +432,9 @@ section.Box2{
     display: flex;
     flex-direction: row;
     align-items: flex-start;
+    flex-wrap: wrap;
     padding-left: 20px;
-    height: 550px; /*Taille bloc invisible Box1 représentant le bloc hébergement et populaire*/
-    
+    height: 550px; /*Taille bloc invisible Box1 représentant le bloc hébergement et populaire*/  
     max-width: 100%;
 }
 div.img_activité{ /*Gère le bloc avec les deux images qui vont flotter*/
@@ -447,6 +448,12 @@ h3{
     white-space: nowrap;
     width: 400px;
     
+}
+div.bloc_act{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+
 }
 /*////////////Floater*/
 
@@ -481,10 +488,11 @@ img.float_img{
     
 }  
 
+
+
 /*////////////Bloc d'img en colonnes*/
 article.Activités{
-    background-color: white;
-    
+    background-color: white;    
     margin-left: 30px;
     border-radius: 1.25rem;
     box-shadow: 0 0 16px #0000002e;
@@ -493,7 +501,6 @@ article.Activités{
     box-sizing: border-box;
     height: 195px; /*hauteur du bloc blanc image*/
     width: 300px;
-
     margin-block-start: 1em; /*Marge vers le haut*/
     margin-block-end: 15px;   /*Marge vers le bas*/
 }
@@ -513,11 +520,11 @@ div.dispo_act{
 /*/////////////////////////////FOOTER/////////////////////////////////*/
 footer{
     
-align-items: flex-end;
+    align-items: flex-end;
     background-color: #F2F2F2;
     border-radius: 10px 10px 10px 10px;
     padding-right: 250px;
-
+    width: 100%;
     
     padding-left: 10px;
 
@@ -543,9 +550,10 @@ h2.footer_title{
 li{
     display: inline;
     font-family: Raleway, Arial, Helvetica, sans-serif;
-    margin-right: 20px;
+    margin-right: 0px;
     
 }
+
 /*////////////////////////////////////DYNAMIQUE QUAND ON SURVOLE/////////////////////////*/
 
 
@@ -556,4 +564,15 @@ article.héber:hover, article.popular:hover{
 
 article.Activités:hover, article.floater:hover{
     transform: scale(1.1, 1.1);
+}
+
+
+/* //////////////////////DISPOSITION ECRAN SMARTPHONE///////////////////////////////////// */
+
+@media all and (max-device-width: 480px)
+{
+    /*//////////////////// Vos règles CSS pour les mobiles ici */
+    
+
+
 }
