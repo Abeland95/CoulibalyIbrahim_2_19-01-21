@@ -13,10 +13,6 @@
     
 
 
-header{
-    display: block;
-}
-
 
 
 article{
@@ -86,66 +82,64 @@ div.étoile_grise{
 
 /*/////////////////Haut de page */
 body{
-    margin-top: 0px;
     width: auto;
+    margin-top: 0px;
 }
-div.title{
-    margin-top: 10px;
-    margin-left: 10px;
-}
-div.haut_page{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
 
-}
-div.lien{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    margin-right: 30px;
-    width: 390px;  /*Permet de donner une largeur à la box et pourvoir créer un écart*/
+
+header{
+    display: grid;
+    grid-template-columns: 1fr auto auto; /*Fr permet de mettre de l'écart entre les blocs*/
+    grid-template-areas: "logo . navbar button";
     
-}
-div.lien1{
-    font-family: Raleway, sans-serif;
-    color: #0065FC;
-    border-top: solid #0065FC;
-    border-width: 3px;
-    width: 160px;
-    text-align: center;
-    padding-top: 10px;
-}
+ }
+ 
+ header.header{
+     margin: auto;
+     align-items: center;
+     max-width: 1440px;
+     display: grid;
+ }
+ 
+ img.logopage{
+     grid-area: logo;
+     padding: 0 1rem;
+     height: 2.813rem;
+ }
+ nav.header_nav{
+     display: flex;
+     grid-area: "navbar";
+ }
 
-div.lien2{
+a.headernav_link{
     font-family: Raleway, sans-serif;
-    padding-top: 10px;
-    width: 160px;
+    width: 100px; /*Largeur du block header_nav*/
     text-align: center;
     border-top: solid white;
+    padding: 2rem;
 }
-div.lien3{
+.headernav_link[data-active=true]{ /*La condition permet d'activer la commande sur un élément*/
+    color: #0065FC;
+}
+a.signup{
     font-family: Raleway, sans-serif;
     font-weight: bold;
     color: #0065FC;
-    border-top: solid white;
-    padding-top: 10px;
-}
-a.héber_link{
-    color: #0065FC;
+    grid-area: button;
+    display: flex;
+    align-items: center;
+    padding: 2rem;
     
 }
 
-div.lien2:hover
+
+.headernav_link:hover
 {
     border-top: solid #0065FC;
     border-width: 3px;
     color: #0065FC;
 
 } 
-p.lien2:hover{
-    color: #0065FC;
-}    
 
 /*/////////////////Description Site*/
 div.sitecaption{
@@ -321,7 +315,6 @@ div.hébergement_main{
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: flex-start;
-    float: left;
     padding-left: 20px;
     padding-right: 20px;
     height: 620px;
@@ -373,7 +366,7 @@ article.héber{
 
 }
 /*//////////////////////////////Représente le bloc populaire*/
-nav{
+nav.popular{
     background-color: #F2F2F2;
     border-radius: 10px 10px 10px 10px;
     display: flex;
@@ -569,10 +562,87 @@ article.Activités:hover, article.floater:hover{
 
 /* //////////////////////DISPOSITION ECRAN SMARTPHONE///////////////////////////////////// */
 
-@media all and (max-device-width: 480px)
+@media all and (max-width: 900px)
 {
-    /*//////////////////// Vos règles CSS pour les mobiles ici */
+    /* Vos règles CSS pour les mobiles ici */
+
+    div.sitecaption{
+        margin-top: 0px;
+        line-height: 20px;
+    }
+    div.header_filtres{
+        display: flex;
+        flex-direction: column;
+        margin: auto;
+        
+    }
+    section.Box1{
+        flex-direction: column-reverse;
+        height: auto;
+    }
+    nav{
+        width: auto;
+        padding-right: 20px;
+    }   
+
+    div.hébergement_main{
+        background-color: white;
+        flex-direction: column;
+        flex-wrap: wrap;
+        height: auto;
+        margin: auto;
+    }
+    div.hébergement_box{
+        flex-direction: column;
     
+    }
 
+    article.héber{
+        width: 400px;
+        height: 220px;
+    }
+    img.héber_image{
+        min-width: 388px;
+        height: 125px;
+    }
+    figure{
+        margin-block-end: 3.5em;
+        margin-block-start: 0em;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-end;
+        line-height: 15px;
+        padding-block-end: 0px;
+        flex-wrap: wrap;
+    }
+    
+    header.header{
+        
+        grid-template-columns: 1fr ; /*Fr permet de mettre de l'écart entre les blocs*/
+        grid-template-areas: 
+        "logo  button";
+    }
+    
+   header{
+       display: grid;
+       align-items: center;
+       margin:auto;
+    
+   } 
 
+   nav.header_nav{
+       display: flex;
+       align-items: center;
+   }
+
+   a.headernav_link{
+       width: 50%; /*Permet aux liens de prendre toute la largeur*/
+       border-bottom: solid #F2F2F2;
+   }
+   a.headernav_link:hover{
+       border-top: none;
+       border-bottom: solid #0065FC;
+    
+   }
 }
