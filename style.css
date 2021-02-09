@@ -712,7 +712,7 @@ article.Activités:hover, article.floater:hover{
 
 /* ///////////////////////////////////////DISPOSITION ECRAN TABLETTE///////////////////////////// */
 
-@media (min-width: 781px) and (max-device-width: 979px)
+@media (min-width: 781px) and (max-device-width: 980px)
 {
     /* Vos règles CSS pour les mobiles ici */
 
