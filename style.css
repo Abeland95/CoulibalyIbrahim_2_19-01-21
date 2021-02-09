@@ -562,7 +562,7 @@ article.Activités:hover, article.floater:hover{
 
 /* //////////////////////DISPOSITION ECRAN SMARTPHONE///////////////////////////////////// */
 
-@media all and (max-device-width: 480px)
+@media all and (max-width: 480px)
 {
     /* Vos règles CSS pour les mobiles ici */
 
@@ -712,7 +712,7 @@ article.Activités:hover, article.floater:hover{
 
 /* ///////////////////////////////////////DISPOSITION ECRAN TABLETTE///////////////////////////// */
 
-@media (min-width: 781px) and (max-device-width: 980px)
+@media (min-width: 480px) and (max-width: 980px)
 {
     /* Vos règles CSS pour les mobiles ici */
 
