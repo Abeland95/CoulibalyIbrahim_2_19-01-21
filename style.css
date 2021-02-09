@@ -562,7 +562,7 @@ article.Activités:hover, article.floater:hover{
 
 /* //////////////////////DISPOSITION ECRAN SMARTPHONE///////////////////////////////////// */
 
-@media all and (max-width: 480px)
+@media all and (max-device-width: 480px)
 {
     /* Vos règles CSS pour les mobiles ici */
 
