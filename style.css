@@ -708,3 +708,153 @@ article.Activités:hover, article.floater:hover{
     
 }
 }
+
+
+/* ///////////////////////////////////////DISPOSITION ECRAN TABLETTE///////////////////////////// */
+
+@media (min-width: 781px) and (max-device-width: 979px)
+{
+    /* Vos règles CSS pour les mobiles ici */
+
+    div.sitecaption{
+        margin-top: 0px;
+        line-height: 20px;
+    }
+    div.header_filtres{
+        display: flex;
+        flex-direction: column;
+        margin: auto;
+        
+    }
+    section.Box1{
+        flex-direction: column-reverse;
+        height: auto;
+    }
+    nav{
+        width: auto;
+        padding-right: 20px;
+    }   
+
+    div.hébergement_main{
+        background-color: white;
+        flex-direction: column;
+        flex-wrap: wrap;
+        height: auto;
+        margin: auto;
+    }
+    div.hébergement_box{
+        flex-direction: column;
+    
+    }
+
+    article.héber{
+        width: 400px;
+        height: 220px;
+    }
+    img.héber_image{
+        min-width: 388px;
+        height: 125px;
+    }
+    figure{
+        margin-block-end: 3.5em;
+        margin-block-start: 0em;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-end;
+        line-height: 15px;
+        padding-block-end: 0px;
+        flex-wrap: wrap;
+    }
+    
+    header.header{
+        
+        grid-template-columns: 1fr ; /*Fr permet de mettre de l'écart entre les blocs*/
+        grid-template-areas: 
+        "logo  button";
+    }
+    
+   header{
+       display: grid;
+       align-items: center;
+       margin:auto;
+    
+   } 
+
+   nav.header_nav{
+       display: flex;
+       align-items: center;
+   }
+
+   a.headernav_link{
+       min-width: 50%; /*Permet aux liens de prendre toute la largeur*/
+       border-bottom: solid #F2F2F2;
+   }
+   a.headernav_link:hover{
+       border-top: none;
+       border-bottom: solid #0065FC;
+    
+   }
+   nav.popular{
+       width: auto;
+       margin: 0rem;;
+   }
+
+   div.bloc_act{
+       display: flex;
+       flex-direction: column;
+       width: auto;
+       height: auto;
+   }
+   
+  
+/*////////////////////////////////////////////////////ACTIVITES////////////////////////////////*/
+    section.Box2{
+        display: flex;
+        flex-direction: column;
+        padding-left: 40px;
+        
+    }
+    div.floater{
+       float: none;
+       align-items: flex-start;
+       
+   }
+   article.floater{
+       width: 400px;
+       height: 200px;
+   }
+   img.float_img{
+       min-width: 400px;
+       height: 140px;
+   }
+   article.Activités{
+       width: 400px;
+       height: 200px;
+       margin-left: 0px;
+       margin-top: 0px;
+    
+   }
+   img.act_img{
+       
+       min-width: 400px;
+       height: 140px;
+       
+   }
+   div.act_bloc_right{
+       margin-left: 0px;
+       margin-top: 0px;
+   }
+
+
+   /* ///////////////////////////////////FOOTER//////////////////////////////////// */
+   footer{
+       width: auto;
+   } 
+   div.dispo_footer{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    
+}
+}
