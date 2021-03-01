@@ -814,9 +814,26 @@ article.Activités:hover, article.floater:hover{
    article.populaire{
        flex-direction: row;
    }
+   article.popular{
+       transform: scale(1.6,1.4);
+       margin-top: 50px;
+   }
+   nav.popular{
+       height: auto;
+   }
    div.populaire{
+       width: 45%;
+       height: 850px;
+       display: flex;
+       flex-direction: column;       
+   }
+   div.popular_title{
+       display: flex;
+       flex-direction: row;
+       justify-content: space-between;
+       align-items: center;
+       width: 600px;
        
-       padding-left: ;
    }
    h2.populaire{
        padding: 0px;
@@ -829,11 +846,7 @@ article.Activités:hover, article.floater:hover{
        height: auto;
        
    }
-   article.populaire{
-       display: flex;
-       align-items: center;
-       flex-direction: column-reverse;
-   }
+  
   
 /*////////////////////////////////////////////////////ACTIVITES////////////////////////////////*/
     section.Box2{
