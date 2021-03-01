@@ -842,13 +842,7 @@ article.Activités:hover, article.floater:hover{
        font-size: 2rem;
    }
 
-   div.bloc_act{
-       display: flex;
-       flex-direction: column;
-       width: 100%;
-       height: auto;
-       
-   }
+ 
   
   
 /*////////////////////////////////////////////////////ACTIVITES////////////////////////////////*/
@@ -857,6 +851,14 @@ article.Activités:hover, article.floater:hover{
         flex-direction: column;
         padding-left: 40px;
         height: auto;
+        
+    }
+    div.bloc_act{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: 1700px;
+        justify-content: space-evenly;
         
     }
     div.floater{
@@ -870,6 +872,7 @@ article.Activités:hover, article.floater:hover{
    article.floater{
        width: 400px;
        height: 200px;
+       transform: scale(1.5,1.2);
    }
    img.float_img{
        min-width: 400px;
@@ -880,6 +883,7 @@ article.Activités:hover, article.floater:hover{
        height: 200px;
        margin-left: 0px;
        margin-top: 0px;
+       transform: scale(1.5, 1.2);
     
    }
    img.act_img{
@@ -889,13 +893,23 @@ article.Activités:hover, article.floater:hover{
        
    }
    div.act_bloc_right{
-       margin-left: 0px;
-       margin-top: 0px;
+       margin-left: 10px;
+       margin-top: 10px;
        display: flex;
+       height: 800px;
        flex-direction: column;
        align-items: center;
+       justify-content: space-around;
+       
    }
-
+   div.img_activité{
+       height: 480px;
+       justify-content: space-between;
+       
+   }
+   h2#activity_link{
+       height: 60px;
+   }
 
    /* ///////////////////////////////////FOOTER//////////////////////////////////// */
    footer{
@@ -911,5 +925,17 @@ article.Activités:hover, article.floater:hover{
     align-items: center;
     justify-content: flex-start;
        
+}
+div.footer_li{
+    display: block;
+    margin: 0px;
+    height: 180px;
+    width: 500px;
+    margin-bottom: 10px;
+    line-height: 30px;
+    font-size: 1.2rem;
+}
+h2.footer_title{
+    font-size: 1.2rem;
 }
 }
