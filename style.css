@@ -84,6 +84,7 @@ div.étoile_grise{
 body{
     width: auto;
     margin-top: 0px;
+    display: block;
 }
 
 
@@ -370,7 +371,7 @@ nav.popular{
     background-color: #F2F2F2;
     border-radius: 10px 10px 10px 10px;
     display: flex;
-    flex-direction: flex-start;
+    flex-direction: column;
 
     width: 30%;
     padding-left: 40px; /*Marge intérieure*/
@@ -446,6 +447,7 @@ div.bloc_act{
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+    width: auto;
 
 }
 /*////////////Floater*/
@@ -517,21 +519,23 @@ footer{
     background-color: #F2F2F2;
     border-radius: 10px 10px 10px 10px;
     padding-right: 250px;
-    width: 100%;
-    
+    width: 80%;
     padding-left: 10px;
 
 }
 
+li{
+    display: flex;
+    flex-direction: row;
+}
 div.dispo_footer{
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: space-around;
 }
-
 div.footer_li{
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     line-height: 30px;
     
 }
@@ -572,12 +576,12 @@ article.Activités:hover, article.floater:hover{
     }
     div.header_filtres{
         display: flex;
-        flex-direction: column;
+        flex-direction: column-reverse;
         margin: auto;
         
     }
     section.Box1{
-        flex-direction: column-reverse;
+        flex-direction: column;
         height: auto;
     }
     nav{
@@ -587,7 +591,7 @@ article.Activités:hover, article.floater:hover{
 
     div.hébergement_main{
         background-color: white;
-        flex-direction: column;
+        flex-direction: column-reverse;
         flex-wrap: wrap;
         height: auto;
         margin: auto;
@@ -653,7 +657,7 @@ article.Activités:hover, article.floater:hover{
    div.bloc_act{
        display: flex;
        flex-direction: column;
-       width: auto;
+       width: 100%;
        height: auto;
    }
    
@@ -699,12 +703,16 @@ article.Activités:hover, article.floater:hover{
 
    /* ///////////////////////////////////FOOTER//////////////////////////////////// */
    footer{
-       width: auto;
+       width: 100%;
+       display: flex;
+       flex-direction: column;
+       padding: 0px;
+       
    } 
    div.dispo_footer{
     display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
+    flex-direction: row;
+    align-items: center;
     
 }
 }
@@ -715,7 +723,7 @@ article.Activités:hover, article.floater:hover{
 @media (min-width: 480px) and (max-width: 980px)
 {
     /* Vos règles CSS pour les mobiles ici */
-
+    
     div.sitecaption{
         margin-top: 0px;
         line-height: 20px;
@@ -734,7 +742,7 @@ article.Activités:hover, article.floater:hover{
         width: auto;
         padding-right: 20px;
     }   
-
+    
     div.hébergement_main{
         background-color: white;
         flex-direction: column;
@@ -744,6 +752,8 @@ article.Activités:hover, article.floater:hover{
     }
     div.hébergement_box{
         flex-direction: column;
+        padding: 2rem;
+        align-items: center;
     
     }
 
@@ -796,29 +806,50 @@ article.Activités:hover, article.floater:hover{
     
    }
    nav.popular{
-       width: auto;
-       margin: 0rem;;
+       width: 100%;
+       margin: 0rem;
+       align-items: center;
+
+   }
+   article.populaire{
+       flex-direction: row;
+   }
+   div.populaire{
+       
+       padding-left: ;
+   }
+   h2.populaire{
+       padding: 0px;
    }
 
    div.bloc_act{
        display: flex;
        flex-direction: column;
-       width: auto;
+       width: 100%;
        height: auto;
+       
    }
-   
+   article.populaire{
+       display: flex;
+       align-items: center;
+       flex-direction: column-reverse;
+   }
   
 /*////////////////////////////////////////////////////ACTIVITES////////////////////////////////*/
     section.Box2{
         display: flex;
         flex-direction: column;
         padding-left: 40px;
+        height: auto;
         
     }
     div.floater{
        float: none;
-       align-items: flex-start;
+       align-items: center;
        
+   }
+   div.img_activité{
+       align-items: center;
    }
    article.floater{
        width: 400px;
@@ -844,17 +875,25 @@ article.Activités:hover, article.floater:hover{
    div.act_bloc_right{
        margin-left: 0px;
        margin-top: 0px;
+       display: flex;
+       flex-direction: column;
+       align-items: center;
    }
 
 
    /* ///////////////////////////////////FOOTER//////////////////////////////////// */
    footer{
+       display: flex;
+       align-items: center;
        width: auto;
+       padding-left: 35%;
    } 
    div.dispo_footer{
+    
     display: flex;
     flex-direction: column;
+    align-items: center;
     justify-content: flex-start;
-    
+       
 }
 }
