@@ -754,12 +754,14 @@ article.Activités:hover, article.floater:hover{
         flex-direction: column;
         padding: 2rem;
         align-items: center;
+        height: 1800px;
     
     }
 
     article.héber{
         width: 400px;
         height: 220px;
+        transform: scale(1.5,1.2);
     }
     img.héber_image{
         min-width: 388px;
@@ -822,21 +824,22 @@ article.Activités:hover, article.floater:hover{
        height: auto;
    }
    div.populaire{
-       width: 45%;
+       width: 100%;
        height: 850px;
        display: flex;
-       flex-direction: column;       
+       flex-direction: column;  
+       align-items: center;     
    }
    div.popular_title{
        display: flex;
        flex-direction: row;
        justify-content: space-between;
        align-items: center;
-       width: 600px;
+       width: 700px;
        
    }
-   h2.populaire{
-       padding: 0px;
+   h2{
+       font-size: 2rem;
    }
 
    div.bloc_act{
