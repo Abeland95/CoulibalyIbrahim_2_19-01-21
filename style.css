@@ -379,6 +379,17 @@ nav.popular{
     height: 620px;
     
 }  
+div.popular_title{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+div.logo_pop{
+    margin-right: 15px;
+    font-size: 20px;
+}
 article.popular{
     background-color: white;
     
