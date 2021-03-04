@@ -850,8 +850,9 @@ article.Activités:hover, article.floater:hover{
        
    }
    h2{
-       font-size: 2rem;
+       font-size: 2.5rem;
    }
+   
 
  
   
@@ -944,9 +945,28 @@ div.footer_li{
     width: 500px;
     margin-bottom: 10px;
     line-height: 30px;
-    font-size: 1.2rem;
+    font-size: 1.8rem;
 }
 h2.footer_title{
-    font-size: 1.2rem;
+    font-size: 2rem;
+}
+p.more{
+    font-size: 40px;
+}
+h2#act_link{
+    margin-bottom: 
+}
+div.sitecaption{
+    line-height: 35px;
+}
+div.info_supp{
+    align-items: center;
+}
+p.info{
+    font-size: 2rem;
+    padding-top: 26px;
+}
+div.info_logo{
+    transform: scale(1.5, 1.5);
 }
 }
