@@ -694,6 +694,11 @@ nav.popular{
     align-items: center;
 
 }
+
+div.logo_pop{
+    margin-right: 15px;
+    font-size: 30px;
+}
 article.populaire{
     flex-direction: row;
 }
