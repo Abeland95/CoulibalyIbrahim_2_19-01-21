@@ -442,7 +442,7 @@ section.Box2{
     height: 550px; /*Taille bloc invisible Box1 représentant le bloc hébergement et populaire*/  
     max-width: 100%;
 }
-div.img_activité{ /*Gère le bloc avec les deux images qui vont flotter*/
+div.img_activite{ /*Gère le bloc avec les deux images qui vont flotter*/
     display: flex;
     flex-direction: column-reverse;
     
@@ -497,7 +497,7 @@ img.float_img{
 
 
 /*////////////Bloc d'img en colonnes*/
-article.Activités{
+article.Activites{
     background-color: white;    
     margin-left: 30px;
     border-radius: 1.25rem;
@@ -570,422 +570,42 @@ article.héber:hover, article.popular:hover{
     transform: scale(1.2, 1.2); /*transformation taille en 2D*/
 }
 
-article.Activités:hover, article.floater:hover{
+article.Activites:hover, article.floater:hover{
     transform: scale(1.1, 1.1);
 }
 
 
-/* //////////////////////DISPOSITION ECRAN SMARTPHONE///////////////////////////////////// */
-
-@media all and (max-width: 480px)
-{
-    /* Vos règles CSS pour les mobiles ici */
-
-    div.sitecaption{
-        margin-top: 0px;
-        line-height: 20px;
-    }
-    div.header_filtres{
-        display: flex;
-        flex-direction: column-reverse;
-        margin: auto;
-        
-    }
-    section.Box1{
-        flex-direction: column;
-        height: auto;
-    }
-    nav{
-        width: auto;
-        padding-right: 20px;
-    }   
-
-    div.hébergement_main{
-        background-color: white;
-        flex-direction: column-reverse;
-        flex-wrap: wrap;
-        height: auto;
-        margin: auto;
-    }
-    div.hébergement_box{
-        flex-direction: column;
-    
-    }
-
-    article.héber{
-        width: 400px;
-        height: 220px;
-    }
-    img.héber_image{
-        min-width: 388px;
-        height: 125px;
-    }
-    figure{
-        margin-block-end: 3.5em;
-        margin-block-start: 0em;
-        display: flex;
-        flex-direction: column;
-        justify-content: flex-start;
-        align-items: flex-end;
-        line-height: 15px;
-        padding-block-end: 0px;
-        flex-wrap: wrap;
-    }
-    
-    header.header{
-        
-        grid-template-columns: 1fr ; /*Fr permet de mettre de l'écart entre les blocs*/
-        grid-template-areas: 
-        "logo  button";
-    }
-    
-   header{
-       display: grid;
-       align-items: center;
-       margin:auto;
-    
-   } 
-
-   nav.header_nav{
-       display: flex;
-       align-items: center;
-   }
-
-   a.headernav_link{
-       min-width: 50%; /*Permet aux liens de prendre toute la largeur*/
-       border-bottom: solid #F2F2F2;
-   }
-   a.headernav_link:hover{
-       border-top: none;
-       border-bottom: solid #0065FC;
-    
-   }
-   nav.popular{
-       width: auto;
-       margin: 0rem;;
-   }
-
-   div.bloc_act{
-       display: flex;
-       flex-direction: column;
-       width: 100%;
-       height: auto;
-   }
-   
-  
-/*////////////////////////////////////////////////////ACTIVITES////////////////////////////////*/
-    section.Box2{
-        display: flex;
-        flex-direction: column;
-        padding-left: 40px;
-        
-    }
-    div.floater{
-       float: none;
-       align-items: flex-start;
-       
-   }
-   article.floater{
-       width: 400px;
-       height: 200px;
-   }
-   img.float_img{
-       min-width: 400px;
-       height: 140px;
-   }
-   article.Activités{
-       width: 400px;
-       height: 200px;
-       margin-left: 0px;
-       margin-top: 0px;
-    
-   }
-   img.act_img{
-       
-       min-width: 400px;
-       height: 140px;
-       
-   }
-   div.act_bloc_right{
-       margin-left: 0px;
-       margin-top: 0px;
-   }
 
 
-   /* ///////////////////////////////////FOOTER//////////////////////////////////// */
-   footer{
-       width: 100%;
-       display: flex;
-       flex-direction: column;
-       padding: 0px;
-       
-   } 
-   div.dispo_footer{
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    
-}
-}
-
-
-/* ///////////////////////////////////////DISPOSITION ECRAN TABLETTE///////////////////////////// */
+/* ///////////////////////////////////////DISPOSITION ECRAN SMARTPHONE ET TABLETTE///////////////////////////// */
 
 @media (min-width: 480px) and (max-width: 980px)
 {
     /* Vos règles CSS pour les mobiles ici */
     
-    div.sitecaption{
-        margin-top: 0px;
-        line-height: 20px;
-    }
-    div.header_filtres{
-        display: flex;
-        flex-direction: column;
-        margin: auto;
-        
-    }
+    
     section.Box1{
+        /* Changement disposition générale du site */
         flex-direction: column-reverse;
         height: auto;
     }
-    nav{
-        width: auto;
-        padding-right: 20px;
-    }   
     
-    div.hébergement_main{
-        background-color: white;
-        flex-direction: column;
-        flex-wrap: wrap;
-        height: auto;
-        margin: auto;
-    }
-    div.hébergement_box{
-        flex-direction: column;
-        padding: 2rem;
-        align-items: center;
-        height: 1800px;
-    
-    }
-
-    article.héber{
-        width: 400px;
-        height: 220px;
-        transform: scale(1.5,1.2);
-    }
-    img.héber_image{
-        min-width: 388px;
-        height: 125px;
-    }
-    figure{
-        margin-block-end: 3.5em;
-        margin-block-start: 0em;
-        display: flex;
-        flex-direction: column;
-        justify-content: flex-start;
-        align-items: flex-end;
-        line-height: 15px;
-        padding-block-end: 0px;
-        flex-wrap: wrap;
-    }
-    
-    header.header{
-        
-        grid-template-columns: 1fr ; /*Fr permet de mettre de l'écart entre les blocs*/
-        grid-template-areas: 
-        "logo  button";
-    }
-    
-   header{
-       display: grid;
-       align-items: center;
-       margin:auto;
-    
-   } 
-
-   nav.header_nav{
-       display: flex;
-       align-items: center;
-   }
-
-   a.headernav_link{
-       min-width: 50%; /*Permet aux liens de prendre toute la largeur*/
-       border-bottom: solid #F2F2F2;
-       font-size: 2rem;
-   }
-   a.headernav_link:hover{
-       border-top: none;
-       border-bottom: solid #0065FC;
-       font-size: ;
-    
-   }
-   a.signup{
-       font-size: 2rem;
-   }
-   p.header{
-       font-size: 1.5rem;
-   }
-   p.filtre{
-       font-size: 1.5rem;
-   }
-   div.filtre{
-       width: 220px;
-   }
-   div.filtre1{
-       width: 170px;
-   }
-   div.filtre2{
-       width: 280px;
-    }
-       
-   div.filtre_txt{
-       font-size: 1.5rem;
-       
-       height: auto;
-   }
-   
-   nav.popular{
-       width: 100%;
-       margin: 0rem;
-       align-items: center;
-
-   }
-   article.populaire{
-       flex-direction: row;
-   }
-   article.popular{
-       transform: scale(1.6,1.4);
-       margin-top: 50px;
-   }
-   nav.popular{
-       height: auto;
-   }
-   div.populaire{
-       width: 100%;
-       height: 850px;
-       display: flex;
-       flex-direction: column;  
-       align-items: center;     
-   }
-   div.popular_title{
-       display: flex;
-       flex-direction: row;
-       justify-content: space-between;
-       align-items: center;
-       width: 700px;
-       
-   }
    h2{
        font-size: 2.5rem;
-   }
+   }  
+
    
 
- 
-  
-  
-/*////////////////////////////////////////////////////ACTIVITES////////////////////////////////*/
-    section.Box2{
-        display: flex;
-        flex-direction: column;
-        padding-left: 40px;
-        height: auto;
-        
-    }
-    div.bloc_act{
-        display: flex;
-        flex-direction: column;
-        width: 100%;
-        height: 1700px;
-        justify-content: space-evenly;
-        
-    }
-    div.floater{
-       float: none;
-       align-items: center;
-       
-   }
-   div.img_activité{
-       align-items: center;
-   }
-   article.floater{
-       width: 400px;
-       height: 200px;
-       transform: scale(1.5,1.2);
-   }
-   img.float_img{
-       min-width: 400px;
-       height: 140px;
-   }
-   article.Activités{
-       width: 400px;
-       height: 200px;
-       margin-left: 0px;
-       margin-top: 0px;
-       transform: scale(1.5, 1.2);
-    
-   }
-   img.act_img{
-       
-       min-width: 400px;
-       height: 140px;
-       
-   }
-   div.act_bloc_right{
-       margin-left: 10px;
-       margin-top: 10px;
-       display: flex;
-       height: 800px;
-       flex-direction: column;
-       align-items: center;
-       justify-content: space-around;
-       
-   }
-   div.img_activité{
-       height: 480px;
-       justify-content: space-between;
-       
-   }
-   h2#activity_link{
-       height: 60px;
-   }
 
-   /* ///////////////////////////////////FOOTER//////////////////////////////////// */
-   footer{
-       display: flex;
-       align-items: center;
-       width: auto;
-       padding-left: 35%;
-   } 
-   div.dispo_footer{
-    
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: flex-start;
-       
-}
-div.footer_li{
-    display: block;
-    margin: 0px;
-    height: 180px;
-    width: 500px;
-    margin-bottom: 10px;
-    line-height: 30px;
-    font-size: 1.8rem;
-}
-h2.footer_title{
-    font-size: 2rem;
-}
-p.more{
-    font-size: 40px;
-}
-h2#act_link{
-    margin-bottom: 
-}
+
+/* //////////////////////////////////HEADER////////////////////////////////////////////////// */
+
+/*////////////// Description Site */
 div.sitecaption{
+    margin-top: 0px;
     line-height: 35px;
 }
+
 div.info_supp{
     align-items: center;
 }
@@ -996,4 +616,257 @@ p.info{
 div.info_logo{
     transform: scale(1.5, 1.5);
 }
+
+/* /////////// Partie Filtre du Header */
+div.header_filtres{
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    
+}
+p.filtre{
+    font-size: 1.5rem;
+}
+div.filtre{
+    width: 220px;
+}
+div.filtre1{
+    width: 170px;
+}
+div.filtre2{
+    width: 280px;
+ }
+    
+div.filtre_txt{
+    font-size: 1.5rem;
+    
+    height: auto;
+}
+
+/* /////////////Haut de page  */
+header.header{
+        
+    grid-template-columns: 1fr ; /*Fr permet de mettre de l'écart entre les blocs*/
+    grid-template-areas: 
+    "logo  button";
+}
+
+header{
+   display: grid;
+   align-items: center;
+   margin:auto;
+
+} 
+
+nav.header_nav{
+   display: flex;
+   align-items: center;
+}
+
+a.headernav_link{
+   min-width: 50%; /*Permet aux liens de prendre toute la largeur*/
+   border-bottom: solid #F2F2F2;
+   font-size: 2rem;
+}
+a.headernav_link:hover{
+   border-top: none;
+   border-bottom: solid #0065FC;
+
+}
+a.signup{
+   font-size: 2rem;
+}
+p.header{
+   font-size: 1.5rem;
+}
+
+
+
+
+/* //////////////////////////////////////BLOC POPULAIRE//////////////////////////////////////////// */
+nav{
+    width: auto;
+    padding-right: 20px;
+}   
+nav.popular{
+    width: 100%;
+    margin: 0rem;
+    align-items: center;
+
+}
+article.populaire{
+    flex-direction: row;
+}
+article.popular{
+    transform: scale(1.6,1.4);
+    margin-top: 50px;
+}
+nav.popular{
+    height: auto;
+}
+div.populaire{
+    width: 100%;
+    height: 850px;
+    display: flex;
+    flex-direction: column;  
+    align-items: center;     
+}
+div.popular_title{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 700px;
+    
+}
+
+
+
+
+
+/* ////////////////////////////////////////////BLOC HEBERGEMENT////////////////////////////////////////// */
+div.hébergement_main{
+    background-color: white;
+    flex-direction: column;
+    flex-wrap: wrap;
+    height: auto;
+    margin: auto;
+}
+div.hébergement_box{
+    flex-direction: column;
+    padding: 2rem;
+    align-items: center;
+    height: 1800px;
+
+}
+
+article.héber{
+    width: 400px;
+    height: 220px;
+    transform: scale(1.5,1.2);
+}
+img.héber_image{
+    min-width: 388px;
+    height: 125px;
+}
+figure{
+    margin-block-end: 3.5em;
+    margin-block-start: 0em;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-end;
+    line-height: 15px;
+    padding-block-end: 0px;
+    flex-wrap: wrap;
+}
+
+
+
+
+/*////////////////////////////////////////////////////ACTIVITES////////////////////////////////*/
+section.Box2{
+    display: flex;
+    flex-direction: column;
+    padding-left: 40px;
+    height: auto;
+    
+}
+div.bloc_act{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 1700px;
+    justify-content: space-evenly;
+    
+}
+div.floater{
+   float: none;
+   align-items: center;
+   
+}
+div.img_activite{
+   align-items: center;
+}
+article.floater{
+   width: 400px;
+   height: 200px;
+   transform: scale(1.5,1.2);
+}
+img.float_img{
+   min-width: 400px;
+   height: 140px;
+}
+article.Activites{
+   width: 400px;
+   height: 200px;
+   margin-left: 0px;
+   margin-top: 0px;
+   transform: scale(1.5, 1.2);
+
+}
+img.act_img{
+   
+   min-width: 400px;
+   height: 140px;
+   
+}
+div.act_bloc_right{
+   margin-left: 10px;
+   margin-top: 10px;
+   display: flex;
+   height: 800px;
+   flex-direction: column;
+   align-items: center;
+   justify-content: space-around;
+   
+}
+div.img_activite{
+   height: 480px;
+   justify-content: space-between;
+   
+}
+h2#activity_link{
+   height: 60px;
+}
+
+
+
+/* ///////////////////////////////////FOOTER//////////////////////////////////// */
+footer{
+    display: flex;
+    align-items: center;
+    width: auto;
+    padding-left: 35%;
+} 
+div.dispo_footer{
+ 
+ display: flex;
+ flex-direction: column;
+ align-items: center;
+ justify-content: flex-start;
+    
+}
+div.footer_li{
+ display: block;
+ margin: 0px;
+ height: 180px;
+ width: 500px;
+ margin-bottom: 10px;
+ line-height: 30px;
+ font-size: 1.8rem;
+}
+h2.footer_title{
+ font-size: 2rem;
+}
+p.more{
+ font-size: 40px;
+}
+h2#act_link{
+ margin-bottom: 
+}
+
+
+
+
 }
