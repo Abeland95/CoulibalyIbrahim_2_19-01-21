@@ -812,12 +812,39 @@ article.Activités:hover, article.floater:hover{
    a.headernav_link{
        min-width: 50%; /*Permet aux liens de prendre toute la largeur*/
        border-bottom: solid #F2F2F2;
+       font-size: 2rem;
    }
    a.headernav_link:hover{
        border-top: none;
        border-bottom: solid #0065FC;
+       font-size: ;
     
    }
+   a.signup{
+       font-size: 2rem;
+   }
+   p.header{
+       font-size: 1.5rem;
+   }
+   p.filtre{
+       font-size: 1.5rem;
+   }
+   div.filtre{
+       width: 220px;
+   }
+   div.filtre1{
+       width: 170px;
+   }
+   div.filtre2{
+       width: 280px;
+    }
+       
+   div.filtre_txt{
+       font-size: 1.5rem;
+       
+       height: auto;
+   }
+   
    nav.popular{
        width: 100%;
        margin: 0rem;
