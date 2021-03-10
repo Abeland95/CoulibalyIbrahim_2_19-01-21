@@ -130,6 +130,7 @@ a.signup{
     display: flex;
     align-items: center;
     padding: 2rem;
+
     
 }
 
@@ -146,6 +147,7 @@ a.signup{
 div.sitecaption{
     line-height: 15px;
     margin-top: 40px;
+    
 }
 
 /*/////////////////Info Localisation*/
@@ -439,7 +441,7 @@ section.Box2{
     align-items: flex-start;
     flex-wrap: wrap;
     padding-left: 20px;
-    height: 550px; /*Taille bloc invisible Box1 représentant le bloc hébergement et populaire*/  
+    height: 600px; /*Taille bloc invisible Box2 représentant le bloc hébergement et populaire*/  
     max-width: 100%;
 }
 div.img_activite{ /*Gère le bloc avec les deux images qui vont flotter*/
@@ -459,6 +461,8 @@ div.bloc_act{
     flex-direction: row;
     flex-wrap: wrap;
     width: auto;
+    height: 800px;
+    margin-left: 30px;
 
 }
 /*////////////Floater*/
@@ -588,10 +592,11 @@ article.Activites:hover, article.floater:hover{
         /* Changement disposition générale du site */
         flex-direction: column-reverse;
         height: auto;
+        min-width: 100%;
     }
     
    h2{
-       font-size: 2.5rem;
+       font-size: 3.2rem;
    }  
 
    
@@ -603,7 +608,7 @@ article.Activites:hover, article.floater:hover{
 /*////////////// Description Site */
 div.sitecaption{
     margin-top: 0px;
-    line-height: 35px;
+    line-height: 40px;
 }
 
 div.info_supp{
@@ -620,35 +625,59 @@ div.info_logo{
 /* /////////// Partie Filtre du Header */
 div.header_filtres{
     display: flex;
-    flex-direction: column;
-    margin: auto;
+    flex-direction: row;
+    width: 70%;
+    align-items: center;
+    flex-wrap: wrap;
+    height: 380px;
     
 }
+div.filtre_none{
+    width: 100%;
+    height: 80px;
+}
 p.filtre{
-    font-size: 1.5rem;
+    font-size: 2.7rem;
 }
 div.filtre{
-    width: 220px;
+    width: 375px;
+    height: 80px;
+    border-radius: 40px;
+    
 }
 div.filtre1{
-    width: 170px;
+    width: 250px;
+    height: 80px;
 }
 div.filtre2{
-    width: 280px;
+    height: 80px;
+    width: 490px;
  }
     
 div.filtre_txt{
-    font-size: 1.5rem;
+    font-size: 2.7rem;
     
     height: auto;
 }
+div.logo_filtre{
+    border-radius: 32px;
+    min-height: 70px;
+    min-width: 80px;
+    font-size: 2rem;
+    margin-top: 0px;
+    padding-right: 0px;
+}
 
 /* /////////////Haut de page  */
+img.logopage{
+    
+    height: 4.813rem;
+}
 header.header{
         
     grid-template-columns: 1fr ; /*Fr permet de mettre de l'écart entre les blocs*/
     grid-template-areas: 
-    "logo  button";
+    "logo button";
 }
 
 header{
@@ -665,19 +694,23 @@ nav.header_nav{
 
 a.headernav_link{
    min-width: 50%; /*Permet aux liens de prendre toute la largeur*/
-   border-bottom: solid #F2F2F2;
-   font-size: 2rem;
+   font-size: 2.5rem;
+}
+a.headernav_link[data-active=true]{ /*La condition permet d'activer la commande sur un élément*/
+    border-bottom: solid #0065FC;
+    
 }
 a.headernav_link:hover{
-   border-top: none;
-   border-bottom: solid #0065FC;
-
-}
+    border-top: none;
+    border-bottom: solid #0065FC;
+ 
+ }
 a.signup{
-   font-size: 2rem;
+   font-size: 2.5rem;
 }
 p.header{
-   font-size: 1.5rem;
+    display: inline;
+   font-size: 31px;
 }
 
 
@@ -685,13 +718,14 @@ p.header{
 
 /* //////////////////////////////////////BLOC POPULAIRE//////////////////////////////////////////// */
 nav{
-    width: auto;
+    width: 100%;
     padding-right: 20px;
 }   
 nav.popular{
-    width: 100%;
-    margin: 0rem;
+    max-width: 93%;
     align-items: center;
+    padding-left: 0px;
+    margin-right: 0px;
 
 }
 
@@ -703,15 +737,19 @@ article.populaire{
     flex-direction: row;
 }
 article.popular{
-    transform: scale(1.6,1.4);
-    margin-top: 50px;
+    transform: scale(2.3,2);
+    margin-bottom: 120px;
+    margin-top: 70px;
+    margin-right: 0px;
+    
 }
 nav.popular{
     height: auto;
+    width: 100%;
 }
 div.populaire{
     width: 100%;
-    height: 850px;
+    height: 1150px;
     display: flex;
     flex-direction: column;  
     align-items: center;     
@@ -735,13 +773,18 @@ div.hébergement_main{
     flex-direction: column;
     flex-wrap: wrap;
     height: auto;
-    margin: auto;
+    align-items: center;   
+    min-width: 100%;
 }
 div.hébergement_box{
     flex-direction: column;
-    padding: 2rem;
     align-items: center;
-    height: 1800px;
+    height: 2500px;
+    margin-left: 0px;
+    margin-right: 0px;
+    padding-left: 0px;
+    padding-right: 0px;
+    width: 100%;
 
 }
 
@@ -773,37 +816,38 @@ figure{
 section.Box2{
     display: flex;
     flex-direction: column;
-    padding-left: 40px;
-    height: auto;
+    padding-left: 00px;
+    height: 2000px;
+    
     
 }
+
 div.bloc_act{
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     width: 100%;
-    height: 1700px;
-    justify-content: space-evenly;
-    
+    height: 2000px;
+    flex-wrap: wrap;
+    justify-content: flex-start;
 }
 div.floater{
-   float: none;
+   float: inline-start;
    align-items: center;
+   width: 100%;
    
 }
-div.img_activite{
-   align-items: center;
-}
+
 article.floater{
-   width: 400px;
+   width: 600px;
    height: 200px;
    transform: scale(1.5,1.2);
 }
 img.float_img{
-   min-width: 400px;
+   min-width: 600px;
    height: 140px;
 }
 article.Activites{
-   width: 400px;
+   width: 600px;
    height: 200px;
    margin-left: 0px;
    margin-top: 0px;
@@ -812,23 +856,35 @@ article.Activites{
 }
 img.act_img{
    
-   min-width: 400px;
+   min-width: 600px;
    height: 140px;
    
 }
+div.act_bloc_left{
+    width: 100%;
+    height: 880px;
+    
+}
 div.act_bloc_right{
    margin-left: 10px;
-   margin-top: 10px;
+   margin-top: 0px;
    display: flex;
-   height: 800px;
+   height: 1000px;
    flex-direction: column;
    align-items: center;
-   justify-content: space-around;
+   ;
+   flex-wrap: wrap;
+   width: 100%;
    
 }
 div.img_activite{
-   height: 480px;
-   justify-content: space-between;
+    display: flex;
+    flex-direction: column;
+   height: 530px;
+    align-items: center;
+    width: 100%;
+    justify-content: space-around;
+   
    
 }
 h2#activity_link{
@@ -842,7 +898,7 @@ footer{
     display: flex;
     align-items: center;
     width: auto;
-    padding-left: 35%;
+    padding-left: 0%;
 } 
 div.dispo_footer{
  
