@@ -68,11 +68,11 @@ div.etoiles{
     margin-block-end: 1em;
     
 }
-div.etoile_bleu{
+div.etoile_bleu, div.etoile_bleu_pop{
     color: #0065FC;
     font-size: 14px;
 }
-div.etoile_grise{
+div.etoile_grise, div.etoile_grise_pop{
     color: #DEEBFF;
     font-size: 13.2px;
 }
@@ -629,14 +629,15 @@ div.sitecaption{
 }
 
 div.info_supp{
-    align-items: center;
+    align-items: flex-start;
 }
 p.info{
-    font-size: 2rem;
+    font-size: 2.5rem;
     padding-top: 26px;
 }
 div.info_logo{
     transform: scale(1.5, 1.5);
+    margin-top: 35px;
 }
 
 /* /////////// Partie Filtre du Header */
@@ -663,7 +664,7 @@ div.filtre{
     
 }
 div.filtre1{
-    width: 250px;
+    width: 280px;
     height: 80px;
 }
 div.filtre2{
@@ -749,7 +750,7 @@ input.search{ /*Fais disparaître la barre recherche*/
 /* /////////////Haut de page  */
 img.logopage{
     
-    height: 4.813rem;
+    height: 7.813rem;
 }
 header.header{
         
@@ -815,15 +816,37 @@ article.populaire{
     flex-direction: row;
 }
 article.popular{
-    transform: scale(2.2,2);
-    margin-bottom: 120px;
-    margin-top: 70px;
-    margin-right: 0px;
     
+    margin-top: 0px;
+    margin-right: 0px;
+    height: 30%;
+    width: 95%;
+    display: flex;
+    flex-direction: row;
+    border-radius: 2rem;
+}
+figure.Carte_pop{
+    transform: scale(2);
+    width: 50%;
+    min-height: 100%;
+    margin: 0px;
+    align-items: center;
+    justify-content: center;
+
+}
+figcaption.pop{
+    font-size: 2.9rem;
 }
 nav.popular{
     height: auto;
     width: 100%;
+}
+p.popular{
+    font-size: 2rem;
+}
+
+div.etoile_bleu_pop, div.etoile_grise_pop{
+    font-size: 2rem;
 }
 div.populaire{
     width: 100%;
@@ -905,6 +928,7 @@ section.Box2{
     flex-direction: column;
     padding-left: 00px;
     height: 2550px;
+    width: 100%;
     
     
 }
