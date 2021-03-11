@@ -756,7 +756,8 @@ header.header{
         
     grid-template-columns: 1fr ; /*Fr permet de mettre de l'écart entre les blocs*/
     grid-template-areas: 
-    "logo button";
+    "logo button"
+    "navbar navbar";
 }
 
 header{
@@ -768,6 +769,7 @@ header{
 
 nav.header_nav{
    display: flex;
+   grid-area: navbar;
    align-items: center;
 }
 
