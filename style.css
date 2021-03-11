@@ -609,6 +609,7 @@ article.Activites:hover, article.floater:hover{
 div.sitecaption{
     margin-top: 0px;
     line-height: 40px;
+    margin-left: 20px;
 }
 
 div.info_supp{
@@ -667,6 +668,19 @@ div.logo_filtre{
     margin-top: 0px;
     padding-right: 0px;
 }
+/*/////////////////Info Localisation*/
+div.localisation{
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-left: 350px;
+    margin-top: 50px;
+    transform: scale(3,2.5);
+    max-width: 35%;
+
+}
+
 
 /* /////////////Haut de page  */
 img.logopage{
@@ -710,7 +724,7 @@ a.signup{
 }
 p.header{
     display: inline;
-   font-size: 31px;
+   font-size: 50px;
 }
 
 
@@ -773,7 +787,7 @@ div.hébergement_main{
     flex-direction: column;
     flex-wrap: wrap;
     height: auto;
-    align-items: center;   
+     
     min-width: 100%;
 }
 div.hébergement_box{
