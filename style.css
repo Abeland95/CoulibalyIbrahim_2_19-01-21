@@ -61,18 +61,18 @@ figcaption{
     display: inline;
    
 }
-div.étoiles{
+div.etoiles{
     display: flex;
     flex-direction: row;
     margin-left: 10px;
     margin-block-end: 1em;
     
 }
-div.étoile_bleu{
+div.etoile_bleu{
     color: #0065FC;
     font-size: 14px;
 }
-div.étoile_grise{
+div.etoile_grise{
     color: #DEEBFF;
     font-size: 13.2px;
 }
@@ -205,6 +205,22 @@ input{
     font-weight: bold;
     font-size: 15px;
 }
+div.loupe{
+    display: none;
+    
+    align-items: center;
+    justify-content: space-around;
+    background-color: #0065FC;
+    border-radius: 0 10px 10px 0 ;
+    width: 40px;
+    text-align: center;
+    height: 40px;
+    margin-top: 1px;
+    font-size: 20px;
+    color: white;
+    font-weight: bold;
+    border: none;
+}
 /*////////////////Info Logement*/
     div.info_supp{
         display: flex;
@@ -308,10 +324,10 @@ section.Box1{
     max-width: 100%;
 }
 
-.titre_héber{
+.titre_heber{
     grid-column: 1/-1;
 }
-div.hébergement_main{
+div.hebergement_main{
     display: flex;
     background-color: #F2F2F2;
     border-radius: 10px 10px 10px 10px;
@@ -324,7 +340,7 @@ div.hébergement_main{
     width: 800px;
     
 }
-div.hébergement_box{ /*Box regroupant les hôtels (hébergement à Marseille)*/
+div.hebergement_box{ /*Box regroupant les hôtels (hébergement à Marseille)*/
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -333,7 +349,7 @@ div.hébergement_box{ /*Box regroupant les hôtels (hébergement à Marseille)*/
 
 
 
-article.héber{
+article.heber{
     background-color: white;
     
     padding: 0.375rem;
@@ -359,7 +375,7 @@ article.héber{
     max-height: 100px;
 }
 
-.héber_image{ /*Représente l'image*/
+.heber_image{ /*Représente l'image*/
     height: 85px; /*Longueur  du block hébergement*/
     object-fit: cover; /*Contenu Image redimenssioné pour s'adapter au block*/
     max-width: 200px;  /*Contrôle taille image dans la bordure*/
@@ -459,10 +475,10 @@ h3{
 div.bloc_act{
     display: flex;
     flex-direction: row;
-    flex-wrap: wrap;
+    
     width: auto;
     height: 800px;
-    margin-left: 30px;
+    
 
 }
 /*////////////Floater*/
@@ -570,7 +586,7 @@ li{
 
 
 
-article.héber:hover, article.popular:hover{
+article.heber:hover, article.popular:hover{
     transform: scale(1.2, 1.2); /*transformation taille en 2D*/
 }
 
@@ -661,27 +677,75 @@ div.filtre_txt{
     height: auto;
 }
 div.logo_filtre{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
     border-radius: 32px;
     min-height: 70px;
     min-width: 80px;
     font-size: 2rem;
     margin-top: 0px;
+    padding-bottom: 15px;
     padding-right: 0px;
 }
 /*/////////////////Info Localisation*/
 div.localisation{
-    text-align: center;
+    
     display: flex;
     flex-direction: row;
+    
     align-items: center;
-    margin-left: 350px;
+    margin-left: 30px;
     margin-top: 50px;
-    transform: scale(3,2.5);
-    max-width: 35%;
+    width: 90%;
+
+
+}
+div.localisation_logo{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-top: 0px;
+    height: 90px;
+    width: 90px;
+}
+div.logo_hd{
+    transform: scale(2.3,2.3);
+}
+div.localisation_mar{
+    height: 90px;
+    width: 700px;
+}
+input{
+    height: 90px;
+    width: 700px;
+    font-size: 50px;
 
 }
 
+::placeholder{
+    font-size: 2.5rem;
+}
+div.loupe{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: #0065FC;
+    border-radius: 0 10px 10px 0 ;
+    width: 90px;
+    text-align: center;
+    height: 90px;
+    margin-top: 1px;
+    font-size: 20px;
+    color: white;
+    font-weight: bold;
+    border: none;
+    
+}
 
+input.search{ /*Fais disparaître la barre recherche*/
+    display: none;
+}
 /* /////////////Haut de page  */
 img.logopage{
     
@@ -745,7 +809,7 @@ nav.popular{
 
 div.logo_pop{
     margin-right: 15px;
-    font-size: 30px;
+    font-size: 50px;
 }
 article.populaire{
     flex-direction: row;
@@ -782,7 +846,7 @@ div.popular_title{
 
 
 /* ////////////////////////////////////////////BLOC HEBERGEMENT////////////////////////////////////////// */
-div.hébergement_main{
+div.hebergement_main{
     background-color: white;
     flex-direction: column;
     flex-wrap: wrap;
@@ -790,10 +854,10 @@ div.hébergement_main{
      
     min-width: 100%;
 }
-div.hébergement_box{
+div.hebergement_box{
     flex-direction: column;
     align-items: center;
-    height: 2500px;
+    height: 3150px;
     margin-left: 0px;
     margin-right: 0px;
     padding-left: 0px;
@@ -802,12 +866,12 @@ div.hébergement_box{
 
 }
 
-article.héber{
+article.heber{
     width: 400px;
     height: 220px;
-    transform: scale(1.5,1.2);
+    transform: scale(2.5,2.2);
 }
-img.héber_image{
+img.heber_image{
     min-width: 388px;
     height: 125px;
 }
@@ -823,7 +887,15 @@ figure{
     flex-wrap: wrap;
 }
 
+figcaption{
+    font-size: 1.2rem;
+    width: 400px;
+    display: flex;
+}
 
+p.Carte_heber{
+    font-size: 1.2rem;
+}
 
 
 /*////////////////////////////////////////////////////ACTIVITES////////////////////////////////*/
@@ -831,7 +903,7 @@ section.Box2{
     display: flex;
     flex-direction: column;
     padding-left: 00px;
-    height: 2000px;
+    height: 2550px;
     
     
 }
@@ -840,7 +912,7 @@ div.bloc_act{
     display: flex;
     flex-direction: row;
     width: 100%;
-    height: 2000px;
+    height: 2500px;
     flex-wrap: wrap;
     justify-content: flex-start;
 }
@@ -853,16 +925,16 @@ div.floater{
 
 article.floater{
    width: 600px;
-   height: 200px;
+   height: 300px;
    transform: scale(1.5,1.2);
 }
 img.float_img{
    min-width: 600px;
-   height: 140px;
+   height: 230px;
 }
 article.Activites{
    width: 600px;
-   height: 200px;
+   height: 300px;
    margin-left: 0px;
    margin-top: 0px;
    transform: scale(1.5, 1.2);
@@ -871,22 +943,25 @@ article.Activites{
 img.act_img{
    
    min-width: 600px;
-   height: 140px;
+   height: 230px;
    
 }
 div.act_bloc_left{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
     width: 100%;
-    height: 880px;
+    height: 1330px;
     
 }
 div.act_bloc_right{
    margin-left: 10px;
    margin-top: 0px;
    display: flex;
-   height: 1000px;
+   height: 1130px;
    flex-direction: column;
    align-items: center;
-   ;
+   justify-content: space-between;
    flex-wrap: wrap;
    width: 100%;
    
@@ -894,7 +969,7 @@ div.act_bloc_right{
 div.img_activite{
     display: flex;
     flex-direction: column;
-   height: 530px;
+   height: 760px;
     align-items: center;
     width: 100%;
     justify-content: space-around;
@@ -905,7 +980,9 @@ h2#activity_link{
    height: 60px;
 }
 
-
+h3{
+    font-size: 2rem;
+}
 
 /* ///////////////////////////////////FOOTER//////////////////////////////////// */
 footer{
@@ -920,19 +997,20 @@ div.dispo_footer{
  flex-direction: column;
  align-items: center;
  justify-content: flex-start;
+ 
     
 }
 div.footer_li{
  display: block;
  margin: 0px;
- height: 180px;
- width: 500px;
+ height: 280px;
+ width: 600px;
  margin-bottom: 10px;
- line-height: 30px;
- font-size: 1.8rem;
+ line-height: 50px;
+ font-size: 2.3rem;
 }
 h2.footer_title{
- font-size: 2rem;
+ font-size: 3rem;
 }
 p.more{
  font-size: 40px;
