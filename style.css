@@ -815,7 +815,7 @@ article.populaire{
     flex-direction: row;
 }
 article.popular{
-    transform: scale(2.3,2);
+    transform: scale(2.2,2);
     margin-bottom: 120px;
     margin-top: 70px;
     margin-right: 0px;
@@ -867,9 +867,10 @@ div.hebergement_box{
 }
 
 article.heber{
+    transform: scale(2.5,2);
     width: 400px;
     height: 220px;
-    transform: scale(2.5,2.2);
+   
 }
 img.heber_image{
     min-width: 388px;
