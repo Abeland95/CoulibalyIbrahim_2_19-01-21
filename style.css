@@ -435,7 +435,7 @@ footer{
 /* /////////////////////////////////////////////////RESPONSIVE//////////////////////////////////////// */
 
 
-@media (min-width: 480px) and (max-width: 980px){
+@media all and (max-device-width: 980px){
     /*/////////////////////////HEADER//////////////////////////////////////////////////////  */
 /* ///////////////////HAut de page */
 
@@ -492,7 +492,7 @@ i.fas.fa-map-marker-alt{ /*Logo localisation*/
 input{ /*champ de recherche ville*/
    
     padding: 2rem 1.25rem;/*Faire grossir le bloc*/
-    font-size: 2.5rem;
+    font-size: 2rem;
 }
 ::placeholder{ /*Contenue du formulaire localisation*/
     color: black;
@@ -631,3 +631,21 @@ h3.activity_title{
 }
 
 }       
+
+/* /////////////////////////////////////POUR IPAD/////////////////////////////////////////////////// */
+@media (min-device-width: 980px) and (max-device-width: 1280px){
+
+    .heber_card{
+        width: 29%;
+    }
+    section.Activity {
+        
+        column-gap: 0rem;
+        grid-template-columns: repeat(2, 2fr);
+        grid-template-rows: auto 18rem 18rem 18rem;
+    }
+    a.card1, a.card3{
+        grid-row: auto;
+        grid-column: auto;
+    }
+}
