@@ -480,7 +480,7 @@ input.search{
 
 .fas.fa-search{
     display: flex; /*Faire apparaître la loupe*/
-    padding: 2rem 2.25rem; /*Faire grossir le bloc*/
+    padding: 2.25rem 2.25rem; /*Faire grossir le bloc*/
 }
 
 i.fas.fa-map-marker-alt{ /*Logo localisation*/
@@ -493,6 +493,7 @@ input{ /*champ de recherche ville*/
    
     padding: 2rem 1.25rem;/*Faire grossir le bloc*/
     font-size: 2rem;
+    margin-right: -1rem;
 }
 ::placeholder{ /*Contenue du formulaire localisation*/
     color: black;
