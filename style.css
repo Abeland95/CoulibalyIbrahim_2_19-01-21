@@ -527,7 +527,7 @@ div.info_logo{
     width: 4rem;
 }
 p{
-    font-size: 36px;
+    font-size: 48px;
 }
 /* ////////////////////////DISPO HEBERGEMENT ET POPULAIRE /////////////////////////////////////////////*/
 
@@ -635,7 +635,37 @@ h3.activity_title{
 
 /* /////////////////////////////////////POUR IPAD/////////////////////////////////////////////////// */
 @media (min-device-width: 980px) and (max-device-width: 1280px){
+    img.logopage{
+        height: 8.813rem;
+    }
+    a.headernav_link, a.signup{
+        font-size: 3rem;
+    }
+    h1, h2.populaire, h2.activity_title{
+        font-size: 3.5rem;
+    }
+    i.fas.fa-map-marker-alt, input, input.search{
+        padding: 3rem 2.25rem;
+        font-size: 2rem;
+    }
+    
+    ::placeholder{
+        font-size: 2rem;
+    }
+    .filtre_icon{
+        height: 5rem;
+        width: 5rem;
+        margin: -7px;
+        font-size: 2rem;
+    }
+    h2.title_filtre, .heber_caption, h3{font-size: 2rem;}
+    p{
+        font-size: 2rem;
+    }
 
+    .heber_star, .pop_star{
+        font-size: 2rem;
+    }
     .heber_card{
         width: 29%;
     }
@@ -643,10 +673,20 @@ h3.activity_title{
         
         column-gap: 0rem;
         grid-template-columns: repeat(2, 2fr);
-        grid-template-rows: auto 18rem 18rem 18rem;
+        grid-template-rows: auto 24rem 24rem 24rem;
+    }
+    h3.activity_title{
+        font-size: 3rem;
     }
     a.card1, a.card3{
         grid-row: auto;
         grid-column: auto;
+    }
+    h3.footer{
+        font-size: 3.5rem;
+    }
+    a.footer_link{
+        font-size: 3rem;
+        line-height: 5rem;
     }
 }
